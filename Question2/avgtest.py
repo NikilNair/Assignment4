@@ -17,7 +17,7 @@ class TestZeroDiv(unittest.TestCase):
         Test that it can error if invalid input is entered
         """
 
-        result = get_avg("apple")
+        result = get_avg([0,0,0,0])
         self.assertEqual(result, ZeroDivisionError)
 
 class TestStrings(unittest.TestCase):
