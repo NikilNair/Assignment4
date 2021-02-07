@@ -26,7 +26,7 @@ class TestStrings(unittest.TestCase):
         """
         Test that it can handle strings instead of numbers
         """
-        result = get_avg("Hello")
+        result = get_avg(["Hello", "World"])
         self.assertEqual(result, TypeError)
 
 
